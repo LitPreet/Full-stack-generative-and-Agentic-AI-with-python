@@ -24,3 +24,5 @@ elif cup == "medium":
 elif cup == "large":
     price = 4.50
     print(f"The price for a {cup} cup of chai is ${price:.2f}")
+else:
+    print("Invalid cup size. Please choose small, medium, or large.")    
