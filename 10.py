@@ -13,16 +13,32 @@
 
     # building a chai price calculator 
 
-cup = input("Choose your cup size (small/medium/large): ").lower()
+# cup = input("Choose your cup size (small/medium/large): ").lower()
 
-if cup == "small":
-    price = 2.50
-    print(f"The price for a {cup} cup of chai is ${price:.2f}")
-elif cup == "medium":
-    price = 3.50
-    print(f"The price for a {cup} cup of chai is ${price:.2f}")
-elif cup == "large":
-    price = 4.50
-    print(f"The price for a {cup} cup of chai is ${price:.2f}")
+# if cup == "small":
+#     price = 2.50
+#     print(f"The price for a {cup} cup of chai is ${price:.2f}")
+# elif cup == "medium":
+#     price = 3.50
+#     print(f"The price for a {cup} cup of chai is ${price:.2f}")
+# elif cup == "large":
+#     price = 4.50
+#     print(f"The price for a {cup} cup of chai is ${price:.2f}")
+# else:
+#     print("Invalid cup size. Please choose small, medium, or large.")    
+
+      
+# building smart thermostat system 
+
+device_status = "active"
+temprature = 38
+
+if device_status == "active":
+    if temprature < 38:
+        print("The temperature is too low. Turning on the heater.")
+    elif temprature > 43:
+        print("The temperature is too high. Turning on the air conditioner.")
+    else:
+        print("The temperature is just right. No adjustments needed.")
 else:
-    print("Invalid cup size. Please choose small, medium, or large.")    
+    print("Device is offline. Please turn it on to adjust the temperature.")
