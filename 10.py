@@ -30,15 +30,24 @@
       
 # building smart thermostat system 
 
-device_status = "active"
-temprature = 38
+# device_status = "active"
+# temprature = 38
 
-if device_status == "active":
-    if temprature < 38:
-        print("The temperature is too low. Turning on the heater.")
-    elif temprature > 43:
-        print("The temperature is too high. Turning on the air conditioner.")
-    else:
-        print("The temperature is just right. No adjustments needed.")
-else:
-    print("Device is offline. Please turn it on to adjust the temperature.")
+# if device_status == "active":
+#     if temprature < 38:
+#         print("The temperature is too low. Turning on the heater.")
+#     elif temprature > 43:
+#         print("The temperature is too high. Turning on the air conditioner.")
+#     else:
+#         print("The temperature is just right. No adjustments needed.")
+# else:
+#     print("Device is offline. Please turn it on to adjust the temperature.")
+
+# delivery fees waiver system
+
+order_amount = float(input("Enter the order amount: "))
+print(f"Order amount: ${order_amount:.2f}")
+
+delivery_fee = 0 if order_amount >= 50 else 5.99
+
+print(f"Delivery fee: ${delivery_fee:.2f}")
