@@ -75,3 +75,11 @@ outer()
 
 print("global", o)          
 
+
+# JavaScript              Python
+# -------------------------------------
+# Array        -> List     []
+# Object       -> Dict     {}
+# Map          -> Dict     {}
+# Set          -> Set      set()
+# No equivalent-> Tuple    ()
